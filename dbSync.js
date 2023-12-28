@@ -1,5 +1,6 @@
 const sequelize = require('./db/postgresConnection')
 const User = require('./model/user');
+const Post = require('./model/post');
 
 try {
     sequelize.sync({ force: true });
