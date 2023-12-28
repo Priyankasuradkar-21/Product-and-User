@@ -10,8 +10,11 @@ const sequelize = new Sequelize({
 })
 
 sequelize.authenticate()
-    .then(() => {
+    .then(async() => {
         console.log('Connection established')
+        
     }).catch((err) => {
         console.error('Connection error: ' + err);
     })
+
+module.exports = sequelize

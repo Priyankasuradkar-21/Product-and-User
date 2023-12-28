@@ -1,7 +1,7 @@
 // user.js
 
 const { DataTypes } = require('sequelize');
-const sequelize = require('./sequelize');   
+const sequelize = require('../db/postgresConnection');   
 
 const User = sequelize.define('User', {
   username: {
