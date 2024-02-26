@@ -6,7 +6,7 @@ const sequelize = new Sequelize({
     port: 5432,
     username: 'postgres',
     password: 'admin',
-    database: 'To-Do-List'
+    database: 'Product-Manage'
 })
 
 sequelize.authenticate()
